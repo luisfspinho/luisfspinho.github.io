@@ -108,7 +108,7 @@
     firebase.auth().signInWithEmailAndPassword(email, password)
             .then(() => {
               sessionStorage.setItem('isLoggedIn', 'true');
-              window.location.href = "https://sites.google.com/aemonchique.pt/biblioteca-escolar/registos-main";
+              window.location.href = "https://sites.google.com/aemonchique.pt/biblioteca-escolar/registos-back";
             })
             .catch((error) => alert('Login failed: ' + error.message));
   }
